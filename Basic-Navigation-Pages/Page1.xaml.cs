@@ -31,5 +31,10 @@ namespace Basic_Navigation_Pages
         {
             this.Frame.Navigate(typeof(Page2));
         }
+
+        private void HyperlinkButtonInfoCarry_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Page2), myTextBoxName.Text);
+        }
     }
 }

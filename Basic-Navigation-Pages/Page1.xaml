@@ -9,11 +9,25 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock x:Name="pageTitle" Text="Page 1" />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="pageTitle" Text="Page 1" />
 
-        <HyperlinkButton
-            HorizontalAlignment="Center"
-            Click="HyperlinkButton_Click"
-            Content="Click to go to page 2" />
+            <HyperlinkButton
+                HorizontalAlignment="Center"
+                Click="HyperlinkButton_Click"
+                Content="Click to go to page 2" />
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <TextBox
+                Name="myTextBoxName"
+                Width="200"
+                HorizontalAlignment="Center"
+                PlaceholderText="Your Name" />
+            <HyperlinkButton
+                HorizontalAlignment="Center"
+                Click="HyperlinkButtonInfoCarry_Click"
+                Content="Click to go to page 2 while carrying some data" />
+        </StackPanel>
     </Grid>
 </Page>
