@@ -25,6 +25,7 @@ namespace Basic_Navigation_Pages
         public Page1()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
